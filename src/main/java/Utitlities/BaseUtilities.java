@@ -88,6 +88,7 @@ public class BaseUtilities {
     @BeforeSuite
     public void setReportConfig() throws IOException
     {
+        setProperties();
         setModuleName();
         htmlReporter = new ExtentHtmlReporter(createReportFile());
         htmlReporter.config().setDocumentTitle(modulename);
