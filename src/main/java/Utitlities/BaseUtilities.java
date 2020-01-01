@@ -102,7 +102,7 @@ public class BaseUtilities {
         reports.setSystemInfo("Host Name",s.getSystemName());
         reports.setSystemInfo("Operating System", System.getProperty("os.name"));
         reports.setSystemInfo("Username", s.getUserName());
-        reports.setSystemInfo("Browser", properties.getProperty("browser").toUpperCase());
+        reports.setSystemInfo("Browser", System.getProperty("browser").toUpperCase());
     }
 
 
