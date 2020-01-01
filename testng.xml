@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="QA_Click_All" parallel="methods" thread-count="2">
+<suite name="QA_Click_All">
 <listeners>
     <listener class-name="Utitlities.Listeners"></listener>
 </listeners>
