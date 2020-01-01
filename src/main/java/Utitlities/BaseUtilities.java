@@ -200,7 +200,7 @@ public class BaseUtilities {
     public void setProperties() throws IOException
     {
         properties = new Properties();
-        FileInputStream project_config_file = new FileInputStream(System.getProperty("user.dir")+"\\project_config.properties");
+        FileInputStream project_config_file = new FileInputStream(System.getProperty("user.dir")+"\\src\\project_config.properties");
         properties.load(project_config_file);
     }
 
