@@ -142,6 +142,8 @@ public class BaseUtilities {
     @AfterSuite
     public void flushReports()
     {
+
+        driver = null;
         reports.flush();
         copyFile();
     }
@@ -207,7 +209,6 @@ public class BaseUtilities {
     public void closeBrowser()
     {
         driver.close();
-        driver = null;
     }
 
     public void takeScreenshot(String testCaseName) throws IOException
