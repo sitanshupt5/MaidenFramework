@@ -36,13 +36,11 @@ public class Module1 extends BaseUtilities {
         test = reports.createTest("TestCase_01_LaunchWebsite");
         node = test.createNode("Open URL");
         driver.get(properties.getProperty("url"));
-        test.info("Driver is initiated."+"\n"+properties.getProperty("url")+ " is now open.", snapMedia(captureScreenShot("TestCase_01_LaunchWebsite")));
         log.trace("Driver is initiated."+"\n"+properties.getProperty("url")+ " is now open.");
         Assert.assertEquals(driver.getTitle(),driver.getTitle());
         WebDriverWait wait = new WebDriverWait(driver, 20);
         node = test.createNode("Close Popup").pass("Popup overlay should be removed");
         WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text() = 'NO THANKS']")));
-        test.info("Popup modal is displayed.", snapMedia(captureScreenShot("TestCase_01_LaunchWebsite")));
         log.trace("Popup modal is displayed.");
         log.trace("Test case executed successfully");
     }
@@ -54,10 +52,8 @@ public class Module1 extends BaseUtilities {
         LandingPage landingPage = new LandingPage(driver);
         node = test.createNode("Close Popup").pass("Popup overlay should be removed");
         landingPage.ClosePopup().click();
-        test.info("Popup modal is clicked.", snapMedia(captureScreenShot("TestCase_02_OpenLoginPage")));
         log.trace("Popup modal is clicked.");
         landingPage.LoginButton().click();
-        test.info("Login Page is now opened.", snapMedia(captureScreenShot("TestCase_02_OpenLoginPage")));
         log.trace("Login Page is now opened.");
         log.trace("Test case executed successfully");
 
