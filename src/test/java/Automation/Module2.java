@@ -22,6 +22,7 @@ public class Module2 extends BaseUtilities {
     public void launchBrowser() throws IOException
     {
 
+        setProperties();
         driver = initializeDriver();
         driver.manage().window().maximize();
     }
