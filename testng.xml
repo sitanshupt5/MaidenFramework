@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QA_Click_All" parallel="methods" thread-count="2">
+<listeners>
+    <listener class-name="Utitlities.Listeners"></listener>
+</listeners>
+<test verbose="2" preserve-order="true" name="D:/WorkSpace/MaidenFramework">
+    <classes>
+        <class name="Automation.Module1">
+            <methods>
+                <include name="TestCase_01_LaunchWebsite"/>
+                <include name="TestCase_02_OpenLoginPage"/>
+            </methods>
+        </class>
+        <class name="Automation.Module2">
+            <methods>
+                <include name="TestCase_03_ErrorLogin"/>
+                <include name="TestCase_04_ErrorLogin"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>

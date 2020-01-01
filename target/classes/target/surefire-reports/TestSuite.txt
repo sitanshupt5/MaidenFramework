@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 316.539 s <<< FAILURE! - in TestSuite
+Automation.Module1.TestCase_03_ErrorLogin  Time elapsed: 42.778 s  <<< FAILURE!
+java.lang.AssertionError: expected [Invalid email or password] but found [Invalid email or password.]
+	at Automation.Module1.TestCase_03_ErrorLogin(Module1.java:67)
+
