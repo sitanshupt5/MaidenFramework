@@ -47,7 +47,7 @@ public class BaseUtilities {
     public WebDriver initializeDriver() throws IOException
     {
         String browserName = System.getProperty("browser");
-        String mode = System.getProperty("headless");
+        String mode = System.getProperty("mode");
         System.out.println(browserName);
         System.out.println(properties.getProperty("chrome_driver_path"));
         if(browserName.equalsIgnoreCase("chrome"))

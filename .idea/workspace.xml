@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccfb0047-eee3-47dc-be29-3907905b0885" name="Default Changelist" comment="build10">
+    <list default="true" id="ccfb0047-eee3-47dc-be29-3907905b0885" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target/classes/MicrosoftWebDriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/geckodriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ExtentReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/Automation/Module2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/project_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Automation/Module1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Automation/Module1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utitlities/BaseUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utitlities/BaseUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Automation/Module1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Automation/Module1.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,7 +25,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,8 +76,8 @@
         <option value="$PROJECT_DIR$/src/project_config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/Automation/Module2.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" />
         <option value="$PROJECT_DIR$/src/test/java/Automation/Module1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" />
       </list>
     </option>
   </component>
@@ -297,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577912000896</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="build10">
+      <created>1577990195179</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577990195179</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -334,6 +355,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29727685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -585,20 +607,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Automation/Module1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="226">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Automation/Module1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        <state relative-caret-position="187">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
