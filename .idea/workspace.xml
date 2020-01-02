@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccfb0047-eee3-47dc-be29-3907905b0885" name="Default Changelist" comment="">
+    <list default="true" id="ccfb0047-eee3-47dc-be29-3907905b0885" name="Default Changelist" comment="build10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/project_config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Automation/Module1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Automation/Module1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Automation/Module2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Automation/Module2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utitlities/BaseUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utitlities/BaseUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Automation/Module1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Automation/Module1.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,60 +24,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1188">
-              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7008#7009#0" expanded="true" />
-                <element signature="e#7038#7039#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Automation/Module2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Automation/Module1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project_config.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,7 +34,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -105,9 +60,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Utitlities/Listeners.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/project_config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/Automation/Module2.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Automation/Module2.java" />
         <option value="$PROJECT_DIR$/src/test/java/Automation/Module1.java" />
       </list>
     </option>
@@ -165,6 +120,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Utitlities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaidenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaidenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaidenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaidenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaidenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaidenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Automation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,9 +225,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Module2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MaidenFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Automation" />
+      <option name="MAIN_CLASS_NAME" value="Automation.Module2" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/WorkSpace/MaidenFramework/testng.xml" />
+        <item itemvalue="TestNG.Module2" />
         <item itemvalue="TestNG.Module1" />
         <item itemvalue="TestNG.Module1.TestCase_01_LaunchWebsite" />
       </list>
@@ -289,46 +283,59 @@
       <option name="project" value="LOCAL" />
       <updated>1577911451368</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="build8">
+      <created>1577911823226</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577911823226</updated>
+    </task>
+    <task id="LOCAL-00005" summary="build9">
+      <created>1577912000896</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577912000896</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2019.12.29 at 20h 32m 39s.xml">
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 21h 00m 33s.xml">
       <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Module1 - 2019.12.29 at 20h 33m 10s.xml">
-      <configuration name="Module1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Module1 - 2019.12.29 at 20h 35m 19s.xml">
-      <configuration name="Module1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Module1 - 2019.12.29 at 20h 36m 55s.xml">
-      <configuration name="Module1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Module1 - 2019.12.29 at 20h 46m 27s.xml">
-      <configuration name="Module1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Module1 - 2019.12.29 at 20h 48m 27s.xml">
-      <configuration name="Module1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Module1 - 2019.12.29 at 21h 07m 28s.xml">
-      <configuration name="Module1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Module1 - 2019.12.29 at 21h 09m 03s.xml">
-      <configuration name="Module1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.01 at 11h 29m 19s.xml">
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 21h 02m 26s.xml">
       <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.01 at 22h 15m 24s.xml">
+    <history-entry file="Module2 - 2020.01.02 at 21h 12m 54s.xml">
+      <configuration name="Module2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 21h 14m 43s.xml">
+      <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 21h 15m 29s.xml">
+      <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 21h 48m 17s.xml">
+      <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 21h 49m 07s.xml">
+      <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 21h 54m 03s.xml">
+      <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 22h 10m 56s.xml">
+      <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_MaidenFramework_testng_xml - 2020.01.02 at 22h 12m 45s.xml">
       <configuration name="D:/WorkSpace/MaidenFramework/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12481089" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29727685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -344,8 +351,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -363,7 +370,10 @@
     <MESSAGE value="build5" />
     <MESSAGE value="build6" />
     <MESSAGE value="build7" />
-    <option name="LAST_COMMIT_MESSAGE" value="build7" />
+    <MESSAGE value="build8" />
+    <MESSAGE value="build9" />
+    <MESSAGE value="build10" />
+    <option name="LAST_COMMIT_MESSAGE" value="build10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,6 +383,12 @@
           <line>11</line>
           <properties />
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Automation/Module2.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -531,32 +547,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/project_config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project_config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.0.0/testng-7.0.0.jar!/org/testng/internal/MethodInvocationHelper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1188">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7008#7009#0" expanded="true" />
-            <element signature="e#7038#7039#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.0.0/testng-7.0.0.jar!/org/testng/internal/TestInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="416" selection-start-line="416" selection-end-line="416" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Automation/Module2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="294">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -565,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Automation/Module1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="226">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

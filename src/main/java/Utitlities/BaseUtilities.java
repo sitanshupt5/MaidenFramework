@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,10 +35,10 @@ public class BaseUtilities {
 
     public WebDriver driver;
     public Properties properties;
-    public ExtentHtmlReporter htmlReporter;
-    public ExtentReports reports;
+    public static ExtentHtmlReporter htmlReporter;
+    public static ExtentReports reports;
     public ExtentTest test, node;
-    public String modulename;
+    public static String modulename;
     public ExcelUtils excel;
     public String report_directory;
 
@@ -47,7 +47,7 @@ public class BaseUtilities {
     public WebDriver initializeDriver() throws IOException
     {
         String browserName = System.getProperty("browser");
-        String mode = System.getProperty("mode");
+        String mode = System.getProperty("headless");
         System.out.println(browserName);
         System.out.println(properties.getProperty("chrome_driver_path"));
         if(browserName.equalsIgnoreCase("chrome"))
@@ -85,24 +85,12 @@ public class BaseUtilities {
     }
 
 
-    @BeforeSuite
-    public void setReportConfig() throws IOException
+    @BeforeTest
+    public void setConfigs() throws IOException
     {
         setProperties();
-        setModuleName();
-        htmlReporter = new ExtentHtmlReporter(createReportFile());
-        htmlReporter.config().setDocumentTitle(modulename);
-        htmlReporter.config().setDocumentTitle("Functional Test Results");
-        htmlReporter.config().setTheme(Theme.DARK);
+        setReportConfig();
 
-        SystemDetails s = new SystemDetails();
-        reports = new ExtentReports();
-        reports.attachReporter(htmlReporter);
-
-        reports.setSystemInfo("Host Name",s.getSystemName());
-        reports.setSystemInfo("Operating System", System.getProperty("os.name"));
-        reports.setSystemInfo("Username", s.getUserName());
-        reports.setSystemInfo("Browser", System.getProperty("browser").toUpperCase());
     }
 
 
@@ -146,6 +134,7 @@ public class BaseUtilities {
         driver = null;
         reports.flush();
         copyFile();
+        System.out.println("after suite executed");
     }
 
     public void setStepStatus() throws IOException
@@ -173,7 +162,7 @@ public class BaseUtilities {
     {
         test = reports.createTest(testcasename);
         excel = new ExcelUtils();
-        excel.setFilePath("D:\\WorkSpace\\MaidenFramework\\data\\"+filename+".xlsx");
+        excel.setFilePath(System.getProperty("user.dir")+"\\data\\"+filename+".xlsx");
     }
 
     public void copyFile()
@@ -191,11 +180,9 @@ public class BaseUtilities {
 
     }
 
-    public void setModuleName()
+    public void setModuleName(String name)
     {
-        StackTraceElement[] stack = Thread.currentThread().getStackTrace();
-        StackTraceElement e = stack[1];
-        modulename = e.getClassName();
+        modulename = name;
 
     }
 
@@ -287,6 +274,24 @@ public class BaseUtilities {
         }
         return local_path;
     }
+
+    public void setReportConfig()
+    {
+        htmlReporter = new ExtentHtmlReporter(createReportFile());
+        htmlReporter.config().setDocumentTitle(modulename);
+        htmlReporter.config().setDocumentTitle("Functional Test Results");
+        htmlReporter.config().setTheme(Theme.DARK);
+
+        SystemDetails s = new SystemDetails();
+        reports = new ExtentReports();
+        reports.attachReporter(htmlReporter);
+
+        reports.setSystemInfo("Host Name",s.getSystemName());
+        reports.setSystemInfo("Operating System", System.getProperty("os.name"));
+        reports.setSystemInfo("Username", s.getUserName());
+        reports.setSystemInfo("Browser", properties.getProperty("browser").toUpperCase());
+    }
+
 
 
 }
