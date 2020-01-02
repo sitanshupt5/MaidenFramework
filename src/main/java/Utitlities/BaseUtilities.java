@@ -208,7 +208,17 @@ public class BaseUtilities {
     {
         String folderpath = createReportDirectory()+"\\"+testCaseName+"_screenshot.png";
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File(folderpath));
+        File dest = new File(folderpath);
+        if(dest.exists())
+        {
+            dest.delete();
+            FileUtils.copyFile(src, dest);
+        }
+        else
+        {
+            FileUtils.copyFile(src, dest);
+        }
+
         return folderpath;
     }
 
