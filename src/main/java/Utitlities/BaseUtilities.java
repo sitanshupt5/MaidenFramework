@@ -297,7 +297,6 @@ public class BaseUtilities {
         htmlReporter.config().setDocumentTitle(modulename);
         htmlReporter.config().setDocumentTitle("Functional Test Results");
         htmlReporter.config().setTheme(Theme.DARK);
-        htmlReporter.config().setAutoCreateRelativePathMedia(true);
 
         SystemDetails s = new SystemDetails();
         reports = new ExtentReports();
