@@ -260,15 +260,6 @@ public class BaseUtilities {
                 e.printStackTrace();
             }
         }
-        else
-        {
-            try {
-                Files.delete(path);
-                Files.createDirectory(path);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
         System.out.println(folder_path);
         return folder_path;
     }
