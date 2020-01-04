@@ -103,23 +103,19 @@ public class BaseUtilities {
 
         if (result.getStatus() == ITestResult.FAILURE||node.getStatus().toString().equalsIgnoreCase("FAIL"))
         {
-            test.log(Status.FAIL, result.getName()+" Test case is Failed");
-            test.log(Status.FAIL, result.getThrowable()+" Test case is Failed");
-            node.log(Status.FAIL,"Step Failed");
-            test.addScreenCaptureFromPath(captureScreenShot(result.getName()));
-            node.addScreenCaptureFromPath(captureScreenShot(result.getName()));
+            test.log(Status.FAIL, result.getName()+" Test case is Failed", snapMedia(captureScreenShot(result.getName())));
+            test.log(Status.FAIL, result.getThrowable()+" Test case is Failed", snapMedia(captureScreenShot(result.getName())));
+            node.log(Status.FAIL,"Step Failed", snapMedia(captureScreenShot(result.getName())));
         }
         else if(result.getStatus() == ITestResult.SKIP)
         {
             test.log(Status.SKIP, result.getName()+" Test case is Skipped.");
         }
-        else if(result.getStatus() == ITestResult.SUCCESS||node.getStatus().toString().equalsIgnoreCase("FAIL"))
+        else if(result.getStatus() == ITestResult.SUCCESS)
         {
             System.out.println(node.getStatus().toString());
-            test.log(Status.PASS, result.getName()+" Test case is Passed");
-            node.log(Status.PASS,"Step Passed");
-            test.addScreenCaptureFromPath(captureScreenShot(result.getName()));
-            node.addScreenCaptureFromPath(captureScreenShot(result.getName()));
+            test.log(Status.PASS, result.getName()+" Test case is Passed", snapMedia(captureScreenShot(result.getName())));
+            node.log(Status.PASS,"Step Passed", snapMedia(captureScreenShot(result.getName())));
 
         }
 
@@ -148,14 +144,11 @@ public class BaseUtilities {
 
         if (node.getStatus().toString().equalsIgnoreCase("FAIL"))
         {
-            node.log(Status.FAIL,"Step Failed");
-            node.addScreenCaptureFromPath(captureScreenShot(testCaseName));
+            node.log(Status.FAIL,"Step Failed", snapMedia(captureScreenShot(testCaseName)));
         }
         else if(node.getStatus().toString().equalsIgnoreCase("PASS"))
         {
-            node.log(Status.PASS,"Step Passed");
-            node.addScreenCaptureFromPath(captureScreenShot(testCaseName));
-
+            node.log(Status.PASS,"Step Passed", snapMedia(captureScreenShot(testCaseName)));
         }
     }
 
