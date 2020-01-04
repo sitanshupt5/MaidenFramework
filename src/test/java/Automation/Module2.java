@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class Module2 extends BaseUtilities {
@@ -29,7 +30,7 @@ public class Module2 extends BaseUtilities {
 
 
     @Test
-    public void TestCase_03_ErrorLogin() throws IOException
+    public void TestCase_03_ErrorLogin() throws IOException, AWTException
     {
         startTestCase("TestCase_03_ErrorLogin", "Module1");
         //Step1
@@ -67,7 +68,7 @@ public class Module2 extends BaseUtilities {
     }
 
     @Test(dataProvider = "TestCase_04")
-    public void TestCase_04_ErrorLogin(String username, String password) throws IOException
+    public void TestCase_04_ErrorLogin(String username, String password) throws IOException, AWTException
     {
         startTestCase("TestCase_04", "Module1");
         //Step1
