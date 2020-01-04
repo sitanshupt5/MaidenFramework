@@ -101,7 +101,7 @@ public class BaseUtilities {
 
 
     @AfterMethod
-    public void publishReports(ITestResult result) throws IOException
+    public void publishReports(ITestResult result) throws IOException, AWTException
     {
 
         if (result.getStatus() == ITestResult.FAILURE||node.getStatus().toString().equalsIgnoreCase("FAIL"))
@@ -137,7 +137,7 @@ public class BaseUtilities {
         System.out.println("after suite executed");
     }
 
-    public void setStepStatus() throws IOException
+    public void setStepStatus() throws IOException, AWTException
     {
         StackTraceElement[] stack = Thread.currentThread().getStackTrace();
         StackTraceElement e = stack[2];
@@ -202,38 +202,25 @@ public class BaseUtilities {
         FileUtils.copyFile(src, new File("D:\\WorkSpace\\ScreenShots\\"+testCaseName+"screenshot.png"));
     }
 
-    public String captureScreenShot(String testCaseName)
+    public String captureScreenShot(String testCaseName) throws IOException, AWTException
     {
         String folderpath = null;
         if(testcase.equalsIgnoreCase(testCaseName)) {
-
-            try {
                 Robot robot = new Robot();
                 folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
                 Rectangle layout = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
                 BufferedImage screenshot = robot.createScreenCapture(layout);
                 ImageIO.write(screenshot, "png", new File(folderpath));
-            }
-            catch(Exception e)
-            {
-                e.printStackTrace();
-            }
         }
         else
         {
             testcase = testCaseName;
             shotnumber=1;
-            try {
-                Robot robot = new Robot();
-                folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
-                Rectangle layout = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
-                BufferedImage screenshot = robot.createScreenCapture(layout);
-                ImageIO.write(screenshot, "png", new File(folderpath));
-            }
-            catch(Exception e)
-            {
-                e.printStackTrace();
-            }
+            Robot robot = new Robot();
+            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
+            Rectangle layout = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+            BufferedImage screenshot = robot.createScreenCapture(layout);
+            ImageIO.write(screenshot, "png", new File(folderpath));
         }
         shotnumber++;
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
