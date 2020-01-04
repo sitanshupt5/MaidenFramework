@@ -41,6 +41,7 @@ public class BaseUtilities {
     public static String modulename;
     public ExcelUtils excel;
     public String report_directory;
+    private String testcase;
 
 
 
@@ -151,7 +152,6 @@ public class BaseUtilities {
         }
         else if(node.getStatus().toString().equalsIgnoreCase("PASS"))
         {
-            System.out.println(node.getStatus().toString());
             node.log(Status.PASS,"Step Passed");
             node.addScreenCaptureFromPath(captureScreenShot(testCaseName));
 
@@ -206,17 +206,26 @@ public class BaseUtilities {
 
     public String captureScreenShot(String testCaseName) throws IOException
     {
-        String folderpath = createReportDirectory()+"\\"+testCaseName+"_screenshot.png";
-        File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File dest = new File(folderpath);
-        if(dest.exists())
-        {
-            dest.delete();
+        int n = 1;
+        String folderpath;
+        if(testcase.equalsIgnoreCase(testCaseName)) {
+
+            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + n + ".png ";
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            File dest = new File(folderpath);
             FileUtils.copyFile(src, dest);
+            n++;
         }
         else
         {
+            testcase = testCaseName;
+            n=1;
+            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + n + ".png ";
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            File dest = new File(folderpath);
             FileUtils.copyFile(src, dest);
+            n++;
+
         }
 
         return folderpath;
