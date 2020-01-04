@@ -30,6 +30,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 import java.util.TimeZone;
+import java.util.concurrent.TimeUnit;
 
 public class BaseUtilities {
 
@@ -218,6 +219,7 @@ public class BaseUtilities {
             FileUtils.copyFile(src, dest);
         }
         shotnumber++;
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
         return folderpath;
     }
