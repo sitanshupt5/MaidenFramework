@@ -4,7 +4,6 @@
     <list default="true" id="ccfb0047-eee3-47dc-be29-3907905b0885" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utitlities/BaseUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utitlities/BaseUtilities.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="266" column="38" selection-start-line="266" selection-start-column="38" selection-end-line="266" selection-end-column="38" />
+            <state relative-caret-position="306">
+              <caret line="235" column="13" lean-forward="true" selection-start-line="235" selection-start-column="13" selection-end-line="235" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -408,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578138802296</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="build 21">
+      <created>1578139685989</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578139685989</updated>
+    </task>
+    <task id="LOCAL-00015" summary="build 21">
+      <created>1578140310593</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1578140310593</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -491,7 +504,8 @@
     <MESSAGE value="build14" />
     <MESSAGE value="5" />
     <MESSAGE value="build 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="build 20" />
+    <MESSAGE value="build 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="build 21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,8 +729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utitlities/BaseUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="266" column="38" selection-start-line="266" selection-start-column="38" selection-end-line="266" selection-end-column="38" />
+        <state relative-caret-position="306">
+          <caret line="235" column="13" lean-forward="true" selection-start-line="235" selection-start-column="13" selection-end-line="235" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

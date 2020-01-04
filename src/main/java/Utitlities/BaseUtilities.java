@@ -17,6 +17,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -44,7 +47,6 @@ public class BaseUtilities {
     public String report_directory;
     private String testcase="t";
     private int shotnumber =1;
-
 
 
     public WebDriver initializeDriver() throws IOException
@@ -200,24 +202,38 @@ public class BaseUtilities {
         FileUtils.copyFile(src, new File("D:\\WorkSpace\\ScreenShots\\"+testCaseName+"screenshot.png"));
     }
 
-    public String captureScreenShot(String testCaseName) throws IOException
+    public String captureScreenShot(String testCaseName)
     {
-        String folderpath;
+        String folderpath = null;
         if(testcase.equalsIgnoreCase(testCaseName)) {
 
-            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
-            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            File dest = new File(folderpath);
-            FileUtils.copyFile(src, dest);
+            try {
+                Robot robot = new Robot();
+                folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
+                Rectangle layout = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+                BufferedImage screenshot = robot.createScreenCapture(layout);
+                ImageIO.write(screenshot, "png", new File(folderpath));
+            }
+            catch(Exception e)
+            {
+                e.printStackTrace();
+            }
         }
         else
         {
             testcase = testCaseName;
             shotnumber=1;
-            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
-            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            File dest = new File(folderpath);
-            FileUtils.copyFile(src, dest);
+            try {
+                Robot robot = new Robot();
+                folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
+                Rectangle layout = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+                BufferedImage screenshot = robot.createScreenCapture(layout);
+                ImageIO.write(screenshot, "png", new File(folderpath));
+            }
+            catch(Exception e)
+            {
+                e.printStackTrace();
+            }
         }
         shotnumber++;
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
