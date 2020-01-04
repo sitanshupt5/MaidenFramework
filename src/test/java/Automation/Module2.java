@@ -97,7 +97,7 @@ public class Module2 extends BaseUtilities {
     public Object[][] data() throws IOException
     {
         DataProviderMapper d = new DataProviderMapper();
-        String filepath = "D:\\WorkSpace\\MaidenFramework\\data\\Module1.xlsx";
+        String filepath = System.getProperty("user.dir")+"\\data\\Module1.xlsx";
         String sheetname = "TestCase_03_ErrorLogin";
         Object[][] data = d.dataMapper(filepath,sheetname);
         return data;
