@@ -106,7 +106,9 @@ public class BaseUtilities {
         {
             test.log(Status.FAIL, result.getName()+" Test case is Failed", snapMedia(captureScreenShot(result.getName())));
             test.log(Status.FAIL, result.getThrowable()+" Test case is Failed", snapMedia(captureScreenShot(result.getName())));
-            node.log(Status.FAIL,"Step Failed", snapMedia(captureScreenShot(result.getName())));
+            test.addScreenCaptureFromPath(captureScreenShot(result.getName()));
+            node.log(Status.FAIL,"Step Failed");
+            node.addScreenCaptureFromPath(captureScreenShot(result.getName()));
         }
         else if(result.getStatus() == ITestResult.SKIP)
         {
@@ -115,16 +117,13 @@ public class BaseUtilities {
         else if(result.getStatus() == ITestResult.SUCCESS)
         {
             System.out.println(node.getStatus().toString());
-            test.log(Status.PASS, result.getName()+" Test case is Passed", snapMedia(captureScreenShot(result.getName())));
-            node.log(Status.PASS,"Step Passed", snapMedia(captureScreenShot(result.getName())));
+            test.log(Status.PASS, result.getName()+" Test case is Passed");
+            test.addScreenCaptureFromPath(captureScreenShot(result.getName()));
+            node.log(Status.PASS,"Step Passed");
+            node.addScreenCaptureFromPath(captureScreenShot(result.getName()));
 
         }
-
-
-
     }
-
-
 
     @AfterSuite
     public void flushReports()
@@ -145,11 +144,13 @@ public class BaseUtilities {
 
         if (node.getStatus().toString().equalsIgnoreCase("FAIL"))
         {
-            node.log(Status.FAIL,"Step Failed", snapMedia(captureScreenShot(testCaseName)));
+            node.log(Status.FAIL,"Step Failed");
+            node.addScreenCaptureFromPath(captureScreenShot(testCaseName));
         }
         else if(node.getStatus().toString().equalsIgnoreCase("PASS"))
         {
-            node.log(Status.PASS,"Step Passed", snapMedia(captureScreenShot(testCaseName)));
+            node.log(Status.PASS,"Step Passed");
+            node.addScreenCaptureFromPath(captureScreenShot(testCaseName));
         }
     }
 
@@ -293,6 +294,7 @@ public class BaseUtilities {
         htmlReporter.config().setDocumentTitle(modulename);
         htmlReporter.config().setDocumentTitle("Functional Test Results");
         htmlReporter.config().setTheme(Theme.DARK);
+        htmlReporter.config().setAutoCreateRelativePathMedia(true);
 
         SystemDetails s = new SystemDetails();
         reports = new ExtentReports();
