@@ -41,7 +41,7 @@ public class BaseUtilities {
     public static String modulename;
     public ExcelUtils excel;
     public String report_directory;
-    private String testcase;
+    private String testcase="t";
 
 
 
