@@ -42,6 +42,7 @@ public class BaseUtilities {
     public ExcelUtils excel;
     public String report_directory;
     private String testcase="t";
+    private int shotnumber =1;
 
 
 
@@ -206,27 +207,24 @@ public class BaseUtilities {
 
     public String captureScreenShot(String testCaseName) throws IOException
     {
-        int n = 1;
         String folderpath;
         if(testcase.equalsIgnoreCase(testCaseName)) {
 
-            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + n + ".png ";
+            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             File dest = new File(folderpath);
             FileUtils.copyFile(src, dest);
-            n++;
         }
         else
         {
             testcase = testCaseName;
-            n=1;
-            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + n + ".png ";
+            shotnumber=1;
+            folderpath = createReportDirectory() + "\\" + testcase + "_screenshot" + shotnumber + ".png ";
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             File dest = new File(folderpath);
             FileUtils.copyFile(src, dest);
-            n++;
-
         }
+        shotnumber++;
 
         return folderpath;
     }
